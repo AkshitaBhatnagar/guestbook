@@ -1,7 +1,7 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: dev-clusters
+  name: guestbook-rule
   namespace: guestbook-app
 spec:
   clusterConditions:
@@ -9,4 +9,4 @@ spec:
   clusterSelector:
     matchExpressions: []
     matchLabels:
-      purpose: development
+      purpose: dev-b
